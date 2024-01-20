@@ -6,6 +6,7 @@
 
 :root {
     --dark: #070707;
+    --sizeindex: calc(1vw + 1vh)
 }
 
 @font-face {
@@ -25,4 +26,7 @@ body, html {
     height: 100%;
     background-color: var(--dark);
     color: #fff;
+    font-family: raleway_m, sans-serif;
+    overflow: hidden;
+    line-height: 1.8;
 }
