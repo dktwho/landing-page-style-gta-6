@@ -42,5 +42,17 @@ body, html {
 
 .slider__wrapper {
     transition: var(--transition) !important
+}
 
+.slider__item {
+    max-height: 75vh;
+    overflow: hidden;
+    position: relative;
+}
+.slider__img {
+    width: 300%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: -100%;
 }
