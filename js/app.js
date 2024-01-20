@@ -1,6 +1,7 @@
 const sliderMain = new Swiper('.slider_main', {
     freeMode: true,
     centeredSlides: true,
+    mousewheel: true,
     breakpoints: {
         0: {
             slidesPerView: 2.5,
