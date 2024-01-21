@@ -58,5 +58,12 @@ body, html {
     left: -100%;
     transition: var(--transition) !important;
     will-change: transform;
+}
 
+.slider_bg {
+    z-index: 0;
+    transform: rotate(-20deg) !important;
+    top: -90vh;
+    left: -10vh;
+    opacity: .15;
 }
