@@ -65,5 +65,10 @@ body, html {
     transform: rotate(-20deg) !important;
     top: -90vh;
     left: -10vh;
-    opacity: .15;
+    opacity: .30;
+    filter: saturate(30) blur(120px);
+}
+
+.slider_bg .slider__item {
+    max-height: 100vh;
 }
