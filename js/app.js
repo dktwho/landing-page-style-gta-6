@@ -23,3 +23,9 @@ const sliderBg = new Swiper('.slider_bg', {
 })
 
 sliderMain.controller.control = sliderBg
+
+document.querySelectorAll('.slider__item').forEach(item => {
+    item.addEventListener('click', event => {
+        item.classList.toggle('opened')
+    } )
+})

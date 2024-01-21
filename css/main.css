@@ -49,6 +49,7 @@ body, html {
     max-height: 75vh;
     overflow: hidden;
     cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 .slider__img {
     width: 300%;
@@ -66,9 +67,14 @@ body, html {
     top: -90vh;
     left: -10vh;
     opacity: .30;
-    filter: saturate(30) blur(120px);
+    filter: blur(120px) saturate(30);
 }
 
 .slider_bg .slider__item {
     max-height: 100vh;
+}
+.slider__item.opened {
+    z-index: 2;
+    transform: rotate(-15deg) scale(1.45);
+    box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
 }
