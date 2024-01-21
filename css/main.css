@@ -51,6 +51,7 @@ body, html {
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition);
 }
+
 .slider__img {
     width: 300%;
     height: 100%;
@@ -66,15 +67,41 @@ body, html {
     transform: rotate(-20deg) !important;
     top: -90vh;
     left: -10vh;
-    opacity: .30;
-    filter: blur(120px) saturate(30);
+    opacity: .20;
+    filter: blur(120px) saturate(20);
 }
 
 .slider_bg .slider__item {
     max-height: 100vh;
 }
+
 .slider__item.opened {
     z-index: 2;
     transform: rotate(-15deg) scale(1.45);
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
+}
+
+.description {
+    position: absolute;
+    font-size: calc(var(--sizeindex) * .8);
+    top: 20vh;
+    left: 8vw;
+    max-width: 24vw;
+
+}
+
+.logo {
+    font-size: calc(var(--sizeindex) * 3.6);
+    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    background: linear-gradient(45deg, #0851ec, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .6;
 }
